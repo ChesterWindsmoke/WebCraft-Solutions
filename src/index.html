@@ -4,19 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <header>
-    <div class="container-main-nav">
+    <div class="container main-nav">
       <!-- Лого -->
       <a href="./index.html" class="logo">WEBCRAFT
       SOLUTIONS()=></a>
       <!-- Навігація -->
       <nav>
         <ul class="site-nav list">
-          <li>Студія</li>
-          <li>Портфоліо</li>
-          <li>Контакти</li>
+          <li><a>Студія</a></li>
+          <li><a>Портфоліо</a></li>
+          <li><a>Контакти</a></li>
         </ul>
       </nav>
       <!--Частина header-->
@@ -28,18 +33,19 @@
   </header>
   <!-- Hero -->
   <main>
-    <div class="overlay">
       <section class="hero">
+        <div class="overlay">
         <h1 class="hero-title">Іноваційні рішення
         для вашого бізнесу</h1>
         <button class="filter-btn" type="button">Залишити заявку</button>
+        </div>
       </section>
-    </div>
+  
 
     <!-- Перша секція -->
-    <section class="section">
+    <section class="section-presentation">
       <div class="container">
-        <p>WebCraft Solutions - це молода та амбіційна команда , що займається WEB розробкою сучасних сайтів та веб додатків. Ми
+        <p class="presentation-text">WebCraft Solutions - це молода та амбіційна команда , що займається WEB розробкою сучасних сайтів та веб додатків. Ми
         гарантуємо сучасний підхід , високу якість , демократичну ціну та в цілому якісний продукт
       </p>
       </div>
@@ -47,37 +53,134 @@
     <!-- Друга секція -->
     <section class="section">
       <div class="container">
-        <ul>
+        <ul class="list">
           <li>
-            <svg class="propose-icon">
-               <use></use>
-            </svg>
+          <img src="./images/front end.jpg">
             <p>Front-end розробка сайту чи веб-додатку</p>
         </li>
           <li>
-            <svg class="propose-icon">
+           <img src="./images/back end icon.jpg">
+            <p>Back-end розробка сайту чи веб-додатку</p>
+          </li>
+          <li>
+            <img src="./images/data base icon.jpg">
+            <p>Проектування баз данних</p>
+          </li>
+          <li>
+            <img src="./images/bot icon.jpg">
+            <p>
+              Розробка ботів
+              під різні потреби
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Третя секція -->
+    <section>
+      <div class="container">
+        <ul class="list"> 
+          <li>
+            <h2>Landing page</h2>
+            <p>Базова комплектація:
+            
+            одна функціональна сторінка
+            дод. функціонал на ваш вибір (слайдер , таймер, анімації)
+            модальне вікно
+            кроссбраузерна верстка
+            валідний та оптимізований js
+            оптимізація зображень
+            семантична верстка
+            
+            Опції:
+            - адаптивна верстка (під десктоп , планшет та телефон)
+            - додаткові скрипти для функціоналу ( більше одного на відміну від базової комплектації)
+            - дизайн
+          </p>
+          </li>
+          <p>Ціна від 500$ (термін від 10 днів)</p>
+          <li>
+            <h2>Корпоративний сайт</h2>
+            <p>Базова комплектація:
+            
+            в середньому 4-6 функціональних сторінок
+            дод. функціонал на ваш вибір (слайдер , таймер, анімації)
+            модальне вікно
+            кроссбраузерна верстка
+            валідний та оптимізований js
+            оптимізація зображень
+            розгалужена інфраструктура сайту що має велику кількість розділів
+            семантична верстка
+            
+            Опції:
+            - адаптивна верстка (під десктоп , планшет та телефон)
+            - додаткові скрипти для функціоналу ( більше одного на відміну від базової комплектації)
+            - дизайн
+          </p>
+          <p>Ціна від 900$ (термін від 20 днів)</p>
+          </li>
+          <li>
+            <h2>Сайт для середнього та
+            великого бізнесу</h2>
+            <p>Базова комплектація:
+            
+            8-10 функціональних сторінок
+            дод. функціонал на ваш вибір (слайдер , таймер, анімації)
+            модальне вікно
+            кроссбраузерна верстка
+            валідний та оптимізований js
+            оптимізація зображень
+            розгалужена інфраструктура сайту що має велику кількість розділів
+            семантична верстка
+            
+            Опції:
+            - адаптивна верстка (під десктоп , планшет та телефон)
+            - додаткові скрипти для функціоналу ( більше одного на відміну від базової комплектації)
+            - дизайн
+          </p>
+          <p>Ціна від 1300$ (термін від 30 днів)</p>
+          </li>
+          <li>
+            <h2>Веб-додатки різної складностів
+            під потреби бізнесу</h2>
+            <p>Ми запропонуємо вам кастомний та індивідуальний додаток
+            саме під потреби вашого бізнесу , це допоможе вирішити та автоматизувати
+            багато рутинних завдань.</p>
+            <p>Ціна від 500$ (термін від 15 днів) </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer>
+    <div class="footer-container">
+      <a href="./index.html" class="logo">WEBCRAFT
+        SOLUTIONS()=></a>
+        <h3>Соціальні мережі</h3>
+        <ul class="list"> 
+          <li>
+          <svg class="instagram-icon">
+            <use></use>
+          </svg>
+          </li>
+            <svg class="facebook-icon">
               <use></use>
             </svg>
           </li>
           <li>
-            <svg class="propose-icon">
-              <use></use>
-            </svg>
-          </li>
-          <li>
-            <svg class="propose-icon">
+            <svg class="linkedin-icon">
               <use></use>
             </svg>
           </li>
         </ul>
+        <h3>Ми з вами зв’яжемось</h3>
+        <input>
+        <button type="button"></button>
 
-
-
-
-
-      </div>
-    </section>
-  </main>
+    </div>
+  </footer>
   
 </body>
 </html>
